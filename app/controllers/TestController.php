@@ -6,12 +6,10 @@
 class TestController extends Controller
 {
 
-  public function home()
+  public function index()
   {
     $article =  Article::first();
 
-    require dirname(__FILE__).'/../views/home.php';
+    require dirname(__FILE__).'/../views/test.php';
   }
 }
-
-?>
