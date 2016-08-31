@@ -12,4 +12,5 @@ class TestController extends Controller
 
     require dirname(__FILE__).'/../views/test.php';
   }
+
 }

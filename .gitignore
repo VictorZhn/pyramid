@@ -1,7 +1,8 @@
 /*
 !.gitignore
-!/app/*
-!/config/*
-!/public/*
-!/config/*
+!/app/
+!/config/
+!/public/
+!/config/
+!/utilities/
 !composer.json

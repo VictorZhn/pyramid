@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 
-// Autoload 自动载入
+// Autoload
 
 require '../vendor/autoload.php';
 
@@ -10,11 +10,13 @@ require '../vendor/autoload.php';
 
 $capsule = new Capsule;
 
-$capsule->addConnection(require '../config/mysql.php');
+// use symfony yaml Component to transform the yaml setting.
+
+$ymlName = "mysql";
+
+$capsule->addConnection(require '../utilities/ymalTransform.php');
 
 $capsule->bootEloquent();
 
-// 路由配置
-
+// Router
 require '../config/router.php';
-?>
