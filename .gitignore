@@ -8,3 +8,4 @@
 !composer.json
 !README.md
 !/bootstrap/
+!.env.example
